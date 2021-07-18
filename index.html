@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASTI DYNASTI Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title">NASTI DYNASTI Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our products and services!</p>
+    <form id="survey-form">
+        <label id="name-label">Name<br><input id="name" type="text" placeholder="Enter your name" name="name" required><br></label><br>
+        
+        <label id="email-label">Email<br><input id="email" type="email" placeholder="Enter your email" name="email" required><br></label><br>
+        
+        <label id="number-label">Age(optional)<br><input id="number" type="number" min="0" max = "100" placeholder="Age" name="age" required><br></label><br>
+        
+
+        <label id="current-role-label">Which option best describes your current role?<br>
+            <select id="dropdown" name="current-role">
+            <option value="" disabled selected hidden>Select your role</option>
+            <option value="tertiary">Tertiary Education Student</option>
+            <option value="undergraduate">Undergraduate Student</option>
+            <option value="graduate">Graduate Student</option>
+            <option value="full-time">Full Time Job</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="retiree">Retiree</option>
+        </select><br>
+        </label><br>
+        
+
+        <label id="recommendation-label" for="recommendation">Would you recommend NASTI DYNASTI to a friend?<br>
+            <label for="definitely"><input id="definitely" type="radio" class="radio" name="recommendation" value="Definitely" checked>Definitely</label>
+            <label for="maybe"><input id="maybe" type="radio" class="radio" name="recommendation" value="Maybe">Maybe</label>
+            <label for="not-sure"><input id="not-sure" type="radio" class="radio" name="recommendation" value="Not Sure">Not sure</label>
+            <label for="probably-not"><input id="probably-not" type="radio" class="radio" name="recommendation" value="Probably Not">Probably not</label>
+        </label><br>
+
+        <label id="genre-label" for="genre">What genre of content would you like to see more on NASTI DYNASTI?<br>
+            <label for="productivity"><input id="productivity" type="checkbox" class="checkbox" name="genre" value="Productivity">Productivity</label>
+            <label for="self-improvement"><input id="self-improvement" type="checkbox" class="checkbox" name="genre" value="Self-Improvement">Self Improvement</label>
+            <label for="investing-and-personal-finance"><input id="investing-and-personal-finance" type="checkbox" class="checkbox" name="genre" value="Investing-and-Personal-Finance">Investing and Personal Finance</label>
+            <label for="fitness-and-health"><input id="fitness-and-health" type="checkbox" class="checkbox" name="genre" value="Fitness-and-Health">Fitness and Health</label>
+            <label for="courses"><input id="courses" type="checkbox" class="checkbox" name="genre" value="courses">1-on-1 Coaching and Courses</label>
+            <label for="vlogs"><input id="vlogs" type="checkbox" class="checkbox" name="genre" value="vlogs">Vlogs</label>
+            <label for="podcasts"><input id="podcasts" type="checkbox" class="checkbox" name="genre" value="podcasts">Podcasts</label>
+        </label><br>
+
+        <label id="comments-label" for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" placeholder="Enter your comments here..." cols=72 rows=6></textarea><br>
+
+        <input type="submit" id="submit">
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
